@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>CLIMAX WORLD</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+	<body class="flex justify-content items-center h-screen font-mono">
+		<div class="flex flex-col justify-center items-center gap-10 w-full">
+			<div class="">
+				<!-- Titre -->
+				<h1 class="text-center text-5xl font-serif mt-5">
+					Météo
+				</h1>
+
+				<!-- Ville / Temperature -->
+				<div class="text-center">
+					<span id="ville" class="text-2xl">paris</span>
+
+					<div id="temperature">
+						<span id="temperature_label"> xx.x </span> °C
+					</div>
+				</div>
+			</div>
+
+			<!-- Changer de ville -->
+			<div id="changer" class="mt-2 text-center p-3 text-xl text-white font-bold uppercase hover:scale-110 duration-400">
+				Changer de ville
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
